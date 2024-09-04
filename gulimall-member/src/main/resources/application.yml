@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    username: shi
+    password: Shiduichen123@
+    url: jdbc:mysql://59.110.150.246:3306/gulimall-ums
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+#        namespace: ""
+#        endpoint: ""  # 确保此项有具体值，或确保使用场景下不需要此配置
+      discovery:
+        server-addr: localhost:8848
+
+  application:
+    name: gulimall-member
+
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+
+
+server:
+  port: 8000

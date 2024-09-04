@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    username: shi
+    password: Shiduichen123@
+    url: jdbc:mysql://59.110.150.246:3306/gulimall-oms
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+
